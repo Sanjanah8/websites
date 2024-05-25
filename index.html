@@ -1,103 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniMePost</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #e69fd4);
-            color: #333;
-            
-        }
-        header {
-            background: #b8539e;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background: #b8539e;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(228, 174, 212, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .post {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-        .post img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        .post h2 {
-            color: #ff66b2;
-        }
-        .post p {
-            color: #666;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Anime Blog</title>
+    <link rel="stylesheet" href="ani.css">
 </head>
 <body>
 
 <header>
-    <h1>AniMePosT</h1>
-    <h2>WELCOME TO MY ANIME BLOG</h1>
+    <img class="header-img" src="c:\Users\welcome\Downloads\d38ed110b5401e504bb270dd64f0680c.jpg" alt="Anime Header Image">
+    <h1>ANIMPOST</h1>
+
+    </h2>Welcome to My Anime Blog</h2>
 </header>
+
+<marquee behavior="scroll" direction="left">Check out our latest reviews and top 10 anime lists! Checkout recent anime news in MyAnimeList</marquee>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Reviews</a>
-    <a href="https://myanimelist.net/topanime.php">Top 10</a>
+    <a href="https://myanimelist.net/topanime.php">Top 10 on MAL</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="container">
+    <button id="togglePostsBtn">Toggle Posts</button>
     <div class="post">
-        <h2>Top 10 ranked anime on MyAnimeList</h2>
-        <img src="c:\Users\welcome\Downloads\Jujutsu-Kaisen-785x442.jpg" >
+        <h2>Anime Title Review</h2>
+        <img class="post-img" src="https://via.placeholder.com/800x400?text=Anime+Image+1" alt="Anime Title Image">
         <p>Posted on May 25, 2024 by Author</p>
-        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, ligula eget pharetra efficitur, orci enim scelerisque lacus, non accumsan nisl arcu in justo.</p>
     </div>
     <div class="post">
         <h2>Top 10 Anime of 2024</h2>
-        <img src="https://via.placeholder.com/800x400?text=Anime+Image+2" alt="Top 10 Anime Image">
+        <img class="post-img" src="https://via.placeholder.com/800x400?text=Anime+Image+2" alt="Top 10 Anime Image">
         <p>Posted on May 18, 2024 by Author</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, ligula eget pharetra efficitur, orci enim scelerisque lacus, non accumsan nisl arcu in justo.</p>
     </div>
     <!-- Add more blog posts as needed -->
 </div>
 
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+</div>
+
 <footer>
     <p>&copy; 2024 Anime Blog. All rights reserved.</p>
 </footer>
 
+<script src="ani.js"></script>
+
 </body>
 </html>
+
