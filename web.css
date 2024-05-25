@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3e5f5; /* Light violet background */
+    color: #faf3f3;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: #ff66b2; /* Violet header */
+    padding-bottom: 20px;
+}
+
+header .header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 5px solid #ff66b2; /* Darker border for contrast */
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff66b2(247, 243, 243, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.running-message {
+    background: #e1bee7; /* Light violet background for the running message */
+    color: #ff66b2; /* Darker violet text color */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.running-message p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 2s linear infinite;
+}
+
+
+nav {
+    background: #ff66b2; /* Darker violet for navigation */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#togglePostsBtn {
+    background: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#togglePostsBtn:hover {
+    background: #ff66b2;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.post h2 {
+    color: #ff66b2; /* Violet for headers */
+}
+
+.post p {
+    color: #666;
+}
+
+footer {
+    background: #ff66b2; /* Darker violet for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
