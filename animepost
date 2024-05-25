@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMePost</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e69fd4);
+            color: #333;
+            
+        }
+        header {
+            background: #b8539e;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #b8539e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(228, 174, 212, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .post h2 {
+            color: #ff66b2;
+        }
+        .post p {
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AniMePosT</h1>
+    <h2>WELCOME TO MY ANIME BLOG</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Reviews</a>
+    <a href="https://myanimelist.net/topanime.php">Top 10</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="post">
+        <h2>Top 10 ranked anime on MyAnimeList</h2>
+        <img src="c:\Users\welcome\Downloads\Jujutsu-Kaisen-785x442.jpg" >
+        <p>Posted on May 25, 2024 by Author</p>
+        <p></p>
+    </div>
+    <div class="post">
+        <h2>Top 10 Anime of 2024</h2>
+        <img src="https://via.placeholder.com/800x400?text=Anime+Image+2" alt="Top 10 Anime Image">
+        <p>Posted on May 18, 2024 by Author</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, ligula eget pharetra efficitur, orci enim scelerisque lacus, non accumsan nisl arcu in justo.</p>
+    </div>
+    <!-- Add more blog posts as needed -->
+</div>
+
+<footer>
+    <p>&copy; 2024 Anime Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
