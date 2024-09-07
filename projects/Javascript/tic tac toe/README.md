@@ -1,3 +1,3 @@
 **TIC TAC TOE**
 ---
-![image](https://github.com/user-attachments/assets/dd013436-95b1-4a4c-a8a5-6e89fbcd6db7)
+![image](https://github.com/user-attachments/assets/253b2f71-aeed-4d00-8e1c-d25088bab48a)
